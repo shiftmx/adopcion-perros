@@ -1,0 +1,81 @@
+.perros-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+
+nav a:hover{
+    color: black;
+}
+
+.nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 1024px){
+    .nav-btn{
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        inset: 0 0 0 30%;
+        display: flex;
+
+        background: hsl(0, 0%, 0%, 0.2);
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: 1s;
+        transform: translateX(100vh);
+    }
+
+    .responsive_nav{
+        transform: none;
+    }
+
+    .responsive_nav #hamburger{
+        background-color: red;
+    }
+
+    .hidden{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 0.4s, opacity 0.4s linear;
+    }
+    .visible{
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.4s linear;
+    }
+    /* #hamburger{
+        background-color: red;
+    } */
+
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+}

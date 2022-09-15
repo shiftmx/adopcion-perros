@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --bg_light: #BFD7FF;
+}
+
+.App{
+}
+
+body{
+    background-color: var(--bg_light);
+    font-family: 'Outfit', sans-serif;
+
+    overflow-x: hidden;
+}
