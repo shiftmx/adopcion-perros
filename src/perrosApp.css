@@ -9,6 +9,8 @@
 
 .section__padding{
     padding: 1rem;
+    margin: auto;
+    max-width: 450px;
 }
 
 body{
