@@ -7,6 +7,10 @@
 .App{
 }
 
+.section__padding{
+    padding: 1rem;
+}
+
 body{
     background-color: var(--bg_light);
     font-family: 'Outfit', sans-serif;

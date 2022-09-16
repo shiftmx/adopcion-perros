@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #9BB1FF;
+background: rgba(155, 177, 255, 0.8);
     padding: 0.5rem 1rem;
     position: sticky; top: 0;
 }
@@ -35,6 +35,7 @@ nav a:hover{
     position: absolute;
     top: 1.3rem;
     right: 2rem;
+    color: #ffffff;
 }
 
 nav {
