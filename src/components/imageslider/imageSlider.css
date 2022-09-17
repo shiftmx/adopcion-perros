@@ -1,3 +1,36 @@
 .slider_item img{
     height: 200px;
+    max-height: 600px !important;
 }
+
+@media screen and (min-width: 400px ) {
+    .slider_item img{
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 430px ) {
+    .slider_item img{
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .slider_item img {
+        width: 100% !important;
+        height: auto;
+        object-fit: cover !important;
+
+
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1300px) {
+    .slider_item img {
+        margin-bottom: 5rem;
+    }
+}
+

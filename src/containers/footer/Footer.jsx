@@ -15,14 +15,20 @@ const Footer = () => {
             <p>Fuentes del Valle 321</p>
           </div>
         </div>
-        <hr />
+        <hr className='horizontal-div-mobile' />
+        <div className='vr'></div>
         <div className="perros__footer_container-social">
-          <FaFacebook className='socials'/>
-          <FaInstagram className='socials'/>
-          <FaTwitter className='socials'/>
+          <div className='redes'>
+            <FaFacebook className='socials'/>
+            <FaInstagram className='socials'/>
+            <FaTwitter className='socials'/>
+          </div>
+          <hr className='horizontal-div-desktop' />
           <p className='socials'>©2022 Perros</p>
         </div>
       </div>
+
+
     </div>
   )
 }

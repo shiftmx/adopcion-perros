@@ -2,7 +2,7 @@
     color: #FFFFFF;    
 }
 
-.perros__header_container h1 {
+.perros__header_container-mobile h1 {
     font-weight: 700;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -14,12 +14,16 @@
     margin-bottom: 1rem;
 }
 
-.perros__header_container{
+.perros__header_container-mobile{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.perros__header_container{
+    display: none;
 }
 
 .btn-catalogo{
@@ -37,3 +41,94 @@
 .btn-catalogo:hover{
     color: rgba(229, 225, 225, 0.9);
 }
+
+@media screen and (min-width: 400px) {
+    .header-logo{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .perros__header_container-mobile h1 {
+        font-size: 2.3rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .header-logo{
+        width: 50%;
+    }
+
+    .btn-catalogo{
+        width: 40%;
+    }
+
+ 
+  }
+
+  @media screen and (min-width: 1024px) {
+    .perros__header_container-mobile{
+        display: none;
+    }
+
+    .perros__header_container{
+        display: flex;;
+    }
+
+    .perros__header_container-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        /* position: relative;
+        right: 4rem;
+        bottom: 2rem; */
+    }
+
+    .perros__header_container-content h1{
+        font-weight: 700;
+        font-size: 55px;
+        width: 84%;
+        line-height: 110%;
+        
+        
+        color: #FFFFFF;
+        
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-catalogo{
+        width: 45%;
+        padding: 0.5rem 3rem;
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+
+    .header-logo{
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        right: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+
+    .perros__header_container-content h1{
+        font-size: 70px;
+    }
+
+    .header-logo{
+
+        width: 547px;
+        height: 517px;
+    }
+
+    .btn-catalogo{
+        width: 50%;
+        font-size: 45px;
+    }
+
+  }

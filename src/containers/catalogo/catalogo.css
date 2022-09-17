@@ -1,5 +1,7 @@
 .perros__catalogo{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .perros__catalogo_container{
@@ -33,11 +35,14 @@
 
 .card img{
     margin-top: 1rem;
-    width: 250px;
+    width: 90%;
     height: 250px;
     border-radius: 50px;
 
     margin-bottom: 1rem;
+
+    object-fit: cover;
+
 
 
 }
@@ -68,4 +73,101 @@
     cursor: pointer;
 
     margin: 0 0 1rem 0;
+}
+
+
+@media screen and (min-width: 380px) {
+    .card img{
+        height: 300px;
+    }
+
+    .perros__catalogo_container h1{
+        font-size: 2.2rem;
+    }
+    .card{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .card img{
+        height: 310px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card{
+        width: 50%;
+        margin: 0 1rem;
+    }
+
+    .card button{
+        font-size: 1rem;
+    }
+
+    .card img{
+        height: 100%;
+    }
+    .perros__catalogo_container-cards_container{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .perros__catalogo_container h1{
+        font-size: 55px;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .perros__catalogo_container{
+        align-items: center;
+    }
+
+    .card{
+        height: 450px;
+        width: 250px;
+    }
+
+    .card img{
+        width: 90%;
+    }
+
+    #perro1 img{
+        object-fit: cover;
+        object-position: -2rem;;
+    }
+
+    #perro3 img{
+        object-fit: cover;
+        object-position: -4rem;
+    }
+
+    .perros__catalogo_container-cards_container{
+        margin-bottom: 5rem;
+    }
+
+    .card {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .card{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        height: 500px;
+        width: 300px;
+    }
+
+    .card button{
+        font-size: 1.5rem;
+        padding: 0.5rem 3rem;
+    }
+
+    .perros__catalogo_container h1{
+        font-size: 70px;
+    }
 }

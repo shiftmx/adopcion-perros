@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <div className='perros__navbar'>
       <div className="perros__navbar_container">
-      <h3>Logo</h3>
+      <h3 id='logo-mobile'>Logo</h3>
         <div className="perros__navbar_container-links">
           <nav ref={navRef}>
             <Menu/>
@@ -49,6 +49,12 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      <div className="perros__navbar_container-links_block">
+          <h3>Logo</h3>
+          <div className='nav-links'>
+            <Menu/>
+          </div>
+        </div>
     </div>
   )
 }
