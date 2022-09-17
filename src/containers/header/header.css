@@ -29,6 +29,11 @@
     padding: 0.8rem 5rem;
     font-size: 1.1rem;
     border: none;
+    text-decoration: none;
 
     cursor: pointer;
+}
+
+.btn-catalogo:hover{
+    color: rgba(229, 225, 225, 0.9);
 }

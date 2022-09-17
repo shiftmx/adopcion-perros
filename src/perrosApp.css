@@ -6,7 +6,8 @@
     --dark_blue: #5465FF;
 }
 
-.App{
+html{
+    scroll-behavior: smooth;
 }
 
 .section__padding{
