@@ -1,6 +1,7 @@
 import React from 'react'
 import './nosotros.css';
 import nosotrosImg1 from '../../assets/perros/nosotros_slideshow-1.png'
+import { ImageSlider } from '../../components';
 
 const Nosotros = () => {
   return (
@@ -18,7 +19,8 @@ const Nosotros = () => {
         <p>
           Cambia vidas, haciendo cada día más feliz y completo. Es por eso que creemos que un perro es para toda la vida.
         </p>
-        <img src={nosotrosImg1} alt="Slideshow 1" />
+        <ImageSlider/>
+        {/* <img src={nosotrosImg1} alt="Slideshow 1" /> */}
       </div>
     </div>
   )
