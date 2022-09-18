@@ -64,6 +64,10 @@
     .perros__nosotros_container{
         align-items: stretch;
     }
+
+    .perros__nosotros{
+        padding: 0 6rem 1.5rem 6rem !important;
+    }
 }
 
 @media screen and (min-width: 1300px) {

@@ -11,10 +11,11 @@
 }
 
 /* LOGO */
-.perros__navbar_container h3 {
+.nav-logo {
     color: #ffffff;
+    width: 35%;
     position: relative;
-    left: 1.2rem;
+    
 }
 
 .perros__navbar_container-links_block{
@@ -125,6 +126,10 @@ nav a:hover{
         display: none;
     }
 
+    .nav-logo {
+        width: 14%;
+    }
+
     .perros__navbar_container-links_block{
         display: flex;
         justify-content: space-between;
@@ -152,6 +157,18 @@ nav a:hover{
         color: rgba(255, 255, 255, 0.5);
     }
 
+    #home, #nosotros, #catalogo, #contacto{
+        scroll-margin-top: 0px;
+    }
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .nav-links a{
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (min-width: 1300px) {
@@ -159,4 +176,6 @@ nav a:hover{
         font-size: 1.6rem;
         padding: 0.5rem 2rem;
     }
+
+    
 }

@@ -5,7 +5,7 @@ import headerLogo from '../../assets/perros/header-main.png'
 
 const Header = () => {
   return (
-    <div className='perros__header section__padding' id='home'>
+    <div className='perros__header section__padding'>
       <div className="perros__header_container-mobile">
         <h1>Donde la adopción de perros es un placer</h1> 
         <img className='header-logo' src={headerLogo} alt="header logo" />
@@ -14,7 +14,7 @@ const Header = () => {
       <div className="perros__header_container">
         <div className="perros__header_container-content">
           <h1>Donde la adopción de perros es un placer</h1> 
-          <a className='btn-catalogo' href='#catalogo'>catalogo</a>
+          <a className='btn-catalogo' href='#catalogo'>catálogo</a>
         </div>
           <img className='header-logo' src={headerLogo} alt="header logo" />
       </div>

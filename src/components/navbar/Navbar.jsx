@@ -1,13 +1,15 @@
 import { useRef } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
+import Logo from '../../assets/logo.png'
 
 import './navbar.css';
+
 
 const Menu = () => (
   <>
       <a href="#home">Home</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="#catalogo">Catalogo</a>
+      <a href="#catalogo">Catálogo</a>
       <a href="#contacto">Contacto</a>
   </>
 )
@@ -36,7 +38,7 @@ const Navbar = () => {
   return (
     <div className='perros__navbar'>
       <div className="perros__navbar_container">
-      <h3 id='logo-mobile'>Logo</h3>
+      <img className='nav-logo' src={Logo} alt="logo" />
         <div className="perros__navbar_container-links">
           <nav ref={navRef}>
             <Menu/>
@@ -50,7 +52,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="perros__navbar_container-links_block">
-          <h3>Logo</h3>
+          <img className='nav-logo' src={Logo} alt="logo" />
           <div className='nav-links'>
             <Menu/>
           </div>
